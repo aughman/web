@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in | Collab Nexus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="auth">
+    <header class="site-header detail">
+      <a class="logo" href="index.html">
+        Collab<span>Nexus</span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html#collections">Collections</a>
+        <a href="index.html#partners">Partners</a>
+        <a href="index.html#support">Support</a>
+      </nav>
+      <div class="header-actions">
+        <a class="text-link" href="signup.html">Become a partner</a>
+        <a class="pill-btn ghost" href="signin.html">Sign in</a>
+      </div>
+    </header>
+
+    <main class="auth-main">
+      <section class="auth-card">
+        <p class="eyebrow">Đăng nhập</p>
+        <h1>Choose your portal</h1>
+        <p class="lede">
+          Select a role to access the right dashboard for customers, partners, or
+          admins.
+        </p>
+
+        <form class="auth-form">
+          <div class="auth-field">
+            <label for="role">Role</label>
+            <div class="auth-role-group" id="role">
+              <label>
+                <input type="radio" name="role" value="customer" checked />
+                Customer
+              </label>
+              <label>
+                <input type="radio" name="role" value="partner" />
+                Partner
+              </label>
+              <label>
+                <input type="radio" name="role" value="admin" />
+                Admin
+              </label>
+            </div>
+          </div>
+
+          <div class="auth-field">
+            <label for="signinEmail">Email</label>
+            <input
+              type="email"
+              id="signinEmail"
+              name="email"
+              placeholder="you@email.com"
+              required
+            />
+          </div>
+
+          <div class="auth-field">
+            <label for="signinPassword">Password</label>
+            <input
+              type="password"
+              id="signinPassword"
+              name="password"
+              placeholder="••••••••"
+              required
+            />
+          </div>
+
+          <div class="auth-utility">
+            <label>
+              <input type="checkbox" name="remember" />
+              Remember me
+            </label>
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <button class="pill-btn primary" type="submit">Sign in</button>
+
+          <p class="auth-switch">
+            Need an account? <a href="signup.html">Create one</a>
+          </p>
+        </form>
+      </section>
+
+      <aside class="auth-side">
+        <div>
+          <p class="eyebrow">Unified access</p>
+          <h2>Customer, Partner & Admin views</h2>
+          <p>
+            Each workspace surfaces the tools that matter most—from order
+            tracking for fans to campaign planning for partners and analytics
+            for admins.
+          </p>
+        </div>
+        <ul class="auth-perks">
+          <li>Role-aware dashboards</li>
+          <li>Secure SSO with audit trail</li>
+          <li>Live collab support 24/7</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Collab Nexus 2025 · Built for fandom economies</p>
+      <div class="footer-links">
+        <a href="#">Press kit</a>
+        <a href="#">Community guidelines</a>
+        <a href="#">Careers</a>
+      </div>
+    </footer>
+  </body>
+</html>
+

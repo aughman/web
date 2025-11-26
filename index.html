@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collab Nexus | Creators & Games Merch Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="index">
+    <header class="site-header">
+      <a class="logo" href="index.html"> Collab<span>Nexus</span> </a>
+      <nav class="site-nav">
+        <a href="#collections">Collections</a>
+        <a href="#partners">Partners</a>
+        <a href="#support">Support</a>
+      </nav>
+      <div class="header-actions">
+        <a class="text-link" href="signin.html">Sign in</a>
+        <a class="pill-btn ghost" href="signup.html">Sign up</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">Multiverse Merch Exchange</p>
+          <h1>Choose your favorite merchs and creators.</h1>
+          <p class="lede">
+            Collab Nexus is the collection hub for video games, VTubers, and top
+            creators. Jump into a fandom, shop curated drops, and follow
+            collab-only capsules in one place.
+          </p>
+          <div class="hero__cta">
+            <button class="pill-btn primary">Explore drops</button>
+            <button class="pill-btn secondary">Build a bundle</button>
+          </div>
+          <div class="hero__stats">
+            <div>
+              <span>48</span>
+              Universes live
+            </div>
+            <div>
+              <span>320+</span>
+              Limited pieces
+            </div>
+            <div>
+              <span>24</span>
+              Creator partners
+            </div>
+          </div>
+        </div>
+        <div class="hero__card">
+          <p>Next drop</p>
+          <h3>Undertale 10th Anniversary</h3>
+          <p>UNDERTALE Collector's Editions</p>
+          <div class="tag">Notify me</div>
+        </div>
+      </section>
+
+      <section class="filters">
+        <div class="filter-chips">
+          <button class="chip active" data-filter="all">All Collections</button>
+          <button class="chip" data-filter="game">Games</button>
+          <button class="chip" data-filter="vtuber">VTubers</button>
+          <button class="chip" data-filter="creator">Creators</button>
+        </div>
+        <div class="filter-search">
+          <input
+            type="search"
+            id="collectionSearch"
+            placeholder="Search a universe or idol..."
+            aria-label="Search collections"
+          />
+        </div>
+      </section>
+
+      <section class="collections" id="collections">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Featured universes</p>
+            <h2>Pick a collab lane</h2>
+          </div>
+          <a class="text-link" href="#support">View drop calendar →</a>
+        </div>
+        <div class="collections-grid" id="collectionsGrid"></div>
+      </section>
+
+      <section class="partners" id="partners">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Signal boost</p>
+            <h2>Studios & collectives in rotation</h2>
+          </div>
+          <button class="pill-btn tertiary">Become a partner</button>
+        </div>
+        <div class="logo-row">
+          <span>Indie Forge</span>
+          <span>Galaxy Merch Lab</span>
+          <span>Vault Records</span>
+          <span>Creator Coop</span>
+        </div>
+      </section>
+
+      <section class="support" id="support">
+        <div class="support-card">
+          <h3>Need help launching a collab?</h3>
+          <p>
+            Our merch producers help creators prototype, license, and fulfill
+            every drop. DM us your pitch and we’ll spin up a universe page in
+            under 48h.
+          </p>
+          <form class="support-form">
+            <input type="text" placeholder="Creator / Studio name" />
+            <input type="email" placeholder="Email" />
+            <textarea
+              placeholder="What kind of collab are you launching?"
+            ></textarea>
+            <button class="pill-btn primary" type="submit">
+              Request a slot
+            </button>
+          </form>
+        </div>
+        <div class="support-card muted">
+          <h4>Drop guidelines</h4>
+          <ul>
+            <li>All universes include apparel + at least 1 collectible.</li>
+            <li>Every capsule ships with serialized authenticity cards.</li>
+            <li>Fans can follow universes for SMS and Discord alerts.</li>
+            <li>Revenue share is automated via Stripe Connect.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Collab Nexus 2025 · Built for fandom economies</p>
+      <div class="footer-links">
+        <a href="#">Press kit</a>
+        <a href="#">Community guidelines</a>
+        <a href="#">Careers</a>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js" type="module"></script>
+  </body>
+</html>
